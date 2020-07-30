@@ -4,6 +4,11 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
+import 'core-js/proposals/reflect-metadata';
+import 'zone.js/dist/zone';
+import 'zone.js/dist/zone-patch-canvas';
+
+
 if (environment.production) {
   enableProdMode();
 }
